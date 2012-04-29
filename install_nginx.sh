@@ -31,7 +31,8 @@ cd /opt/nginx*/
   --with-http_stub_status_module \
   --http-fastcgi-temp-path=/var/lib/nginx/fastcgi \
   --with-debug \
-  --add-module=/opt/nginxmodules/headers-more
+  --add-module=/opt/nginxmodules/headers-more \
+  --with-http_ssl_module
 
 make
 make install
